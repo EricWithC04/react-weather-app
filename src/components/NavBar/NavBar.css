@@ -1,0 +1,10 @@
+.nav-bar {
+    padding: 15px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-bar input {
+    margin-right: 4px;
+}

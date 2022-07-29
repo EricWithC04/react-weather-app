@@ -25,6 +25,10 @@ module.exports = {
                     devMode ? "style-loader": MiniCssExtractPlugin.loader,
                     "css-loader"
                 ]
+            },
+            {
+                test: /\.jsx$/,
+                loader: "babel-loader"
             }
         ]
     },
