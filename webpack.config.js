@@ -1,3 +1,4 @@
+const DotenvWebpackPlugin = require("dotenv-webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const MiniCSSExtractPlugin = require("mini-css-extract-plugin");
@@ -38,6 +39,7 @@ module.exports = {
         }),
         new MiniCSSExtractPlugin({
             filename: "bundler.css"
-        })
+        }),
+        new DotenvWebpackPlugin()
     ]
 }

@@ -1,8 +1,67 @@
+/*!**********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Cards/Cards.css ***!
+  \**********************************************************************************/
+.cards-container {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12px;
+}
+/*!********************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/Card/Card.css ***!
+  \********************************************************************************/
+.card-container {
+    height: 260px;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    outline: 2px black solid;
+}
+
+.btn-close {
+    background-color: #f33;
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+    border: none;
+    align-self: flex-end;
+    margin: 5px;
+    color: #fff;
+}
+
+.city-name {
+    font-size: 26px;
+}
+
+.info-container {
+    height: 65%;
+    width: 88%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 /*!************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/NavBar/NavBar.css ***!
   \************************************************************************************/
+.nav-bar {
+    padding: 15px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-bar input {
+    margin-right: 4px;
+}
 
 /*!*****************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/index.css ***!
   \*****************************************************************/
-
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
