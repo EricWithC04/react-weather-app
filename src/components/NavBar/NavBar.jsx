@@ -7,7 +7,7 @@ const NavBar = ({ onSearch }) => {
 
     const handleClick = (e) => {
         e.preventDefault();
-        if(!input) return alert("Debes escribir el nombre de una ciudad!")
+        if(!cityInput) return alert("Debes escribir el nombre de una ciudad!")
         else onSearch(cityInput)
     }
 

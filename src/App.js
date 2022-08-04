@@ -9,7 +9,6 @@ const App = () => {
     const { REACT_APP_API_KEY } = process.env;
 
     function onSearch (cityName) {
-        console.log("aun no hay nada");
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${REACT_APP_API_KEY}`)
             .then(response => response.json())
             .then(json => {
@@ -29,7 +28,7 @@ const App = () => {
     return (
         <>
             <NavBar onSearch={onSearch}/>
-            <Cards />
+            <Cards ciudades={cities}/>
         </>
     )
 }
